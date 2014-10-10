@@ -325,7 +325,6 @@ material-sidenav {
 }
 
 .viewButton {
-  border: 1px solid rgba(0,0,0,0.2);
   height: 48px;
   width: 53px;
 }
@@ -882,11 +881,10 @@ material-toolbar {
   margin-bottom: 15px;
   font-size: 14px;
   margin-left: 0px;
-  color: black;
+  color: #fff;
 }
 
 .viewButton {
-  border: 1px solid rgba(0,0,0,0.2);
   height: 26px;
   width: 35px;
   margin-top: 4px;

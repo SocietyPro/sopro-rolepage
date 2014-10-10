@@ -3,8 +3,11 @@
 	background-attachment: fixed;
 }
 .mainContentTemplates { 
-	background: url(../assets/images/434655.jpg) top right no-repeat;
-	background-attachment: fixed;
+	background: url(../assets/images/434655.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 material-card {
 	opacity: 0.9;
@@ -53,14 +56,17 @@ material-card {
 }
 
 .pantheonToolbar {
-	background-color: #a48623;
+	background-color: #000;
 }
 .menu-item {
 	background-color: rgba(255,255,255,0);
 	font-weight: bold;
 }
 material-sidenav {
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(0,0,0,0.8);
+-webkit-box-shadow: 33px 0px 17px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    33px 0px 17px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         33px 0px 17px 0px rgba(50, 50, 50, 0.75);
 }
 
 #dialogLayout {
