@@ -39,11 +39,11 @@
     </material-content>
   </material-sidenav>
   <div layout="vertical" layout-fill ng-class="{mainContentPolls:view,mainContentTemplates:!view}">
-    <material-toolbar scroll-shrink class="pantheonToolbar">
+    <material-toolbar  id="appToolbar" scroll-shrink class="pantheonToolbar">
       <div layout="horizontal">
         <div class="material-toolbar-tools">
           <div id="menu-drawer-button" class="menu-icon" ng-click="toggleMenu()"> <img src="material-icons/icons/system_icons/navigation/res/1x_web/ic_menu_24dp.png"> </div>
-          <h2 class="toolbarTitle">Choose a Role</h2>
+          <h2 id="appTitle" class="toolbarTitle">Choose a Role</h2>
         </div>
       </div>
     </material-toolbar>
@@ -51,7 +51,7 @@
       
       <!--tomas code-->
       <div class="card-container">
-        <div class="pantheon-logo"><img src="logo.png"></div>
+        <div id="bigLogo" class="pantheon-logo"><img src="logo.png"></div>
         <div class="user-card">
           <div class="inner-margin new-user"><img src="black-avatar.png">
             <ul>
