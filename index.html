@@ -39,7 +39,7 @@
     <material-toolbar  id="appToolbar" scroll-shrink class="pantheonToolbar">
       <div layout="horizontal">
         <div class="material-toolbar-tools">
-          <div id="menu-drawer-button" class="menu-icon" ng-click="toggleMenu()"> <img src="material-icons/icons/system_icons/navigation/res/1x_web/ic_menu_24dp.png"> </div>
+          <div id="menu-drawer-button" class="menu-icon" ng-click="toggleMenu()"> <img src="material-icons/icons/system_icons/navigation/res/1x_web/ic_menu_wht_24dp.png"> </div>
           <h2 id="appTitle" class="toolbarTitle">Choose a Role</h2>
         </div>
       </div>
@@ -53,16 +53,18 @@
 
         <div class="roleCard">
           <div class="inner-margin new-user"><img src="assets/images/black-avatar.png">
-            <div class="roleName" title="Role Name">Add a Role</div>
+            <div class="roleName" title="Add a Role">Add a Role</div>
           </div>
         </div>
 
-        <div title="Role Card" class="roleCard">
+        <div title="Role Card" class="roleCard" ng-repeat="role in roles track by role.name">
           <div class="inner-margin">
           <div title="Role Avatar"><img src="assets/images/tomas.png"></div>
             <div class="roleName" title="Role Name">{{role.name}}</div>
           </div>
         </div>
+
+        <!--<pre>{{roles | json}}</pre>-->
 
       </div>
       <material-button class="material-button-fab material-theme-light-blue fab">

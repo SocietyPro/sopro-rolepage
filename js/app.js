@@ -33,7 +33,8 @@ app.factory("menu", ['$rootScope', function ($rootScope) {
 app.controller("appCtrl",function ($scope, $materialSidenav, menu){
 
   $scope.menu = menu;
-  $scope.role = Cambrian.capi.roles.list()[0];
+  $scope.roles = Cambrian.capi.roles.list();
+  console.log($scope.roles);
 
   $scope.toggleMenu = function () {
     $materialSidenav('left').toggle();
