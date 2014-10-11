@@ -66,29 +66,10 @@
 	padding: 5px 5px 0 5px
 }
 
-.roleCard ul {
-	padding: 5px 10px;
-	list-style-type: none
-}
-
-.roleCard ul li {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-	padding: 0;
-	margin: 0;
+.roleCard .roleName {
+	padding: 10px;
 	font-size: 10px;
 	text-transform: uppercase;
-	color: #999999;
-	height: 25px;
-	line-height: 25px
-}
-
-.roleCard ul li:last-child {
-	border-bottom: none;
-	margin: 0;
-	padding: 0
-}
-
-.roleCard .new-user ul li {
 	color: #1e6b99;
 	text-align: center
 }
