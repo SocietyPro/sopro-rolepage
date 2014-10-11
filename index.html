@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="pollApp">
+<html ng-app="app">
 <head>
 <title>Choose a Role</title>
 <link rel="stylesheet" type="text/css" href="css/angular-material.css">
@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/dropdown.css">
 <link rel="stylesheet" type="text/css" href="css/pantheonPollMaster.css">
 </head>
-<body ng-controller="pollAppCtrl">
+<body ng-controller="appCtrl">
 <div id="applicationContainer" layout="horizontal">
   <material-sidenav class="material-sidenav-left material-whiteframe-z2" component-id="left">
     <material-toolbar class="pantheonToolbar" ng-class="{template:isTmpl}" layout-align="center center"> <img src="assets/images/logo-small.png"> </material-toolbar>
@@ -48,8 +48,10 @@
       
       <!--tomas code-->
       <div class="card-container">
+
         <div id="bigLogo" class="pantheon-logo"><img src="assets/images/logo.png"></div>
-        <div class="user-card">
+
+        <div class="roleCard">
           <div class="inner-margin new-user"><img src="assets/images/black-avatar.png">
             <ul>
               <li></li>
@@ -58,81 +60,16 @@
             </ul>
           </div>
         </div>
-        <div class="user-card">
-          <div class="inner-margin"> <img src="assets/images/tomas.png">
+
+        <div title="Role Card" class="roleCard">
+          <div class="inner-margin new-user">
+          <div title="Role Avatar"><img src="assets/images/tomas.png"></div>
             <ul>
-              <li>Tomas Colussi</li>
-              <li>Admin</li>
-              <li>Aditional info</li>
+              <li><div title="Role Name">{{role.name}}</div></li>
             </ul>
           </div>
         </div>
-        <div class="user-card">
-          <div class="inner-margin"> <img src="assets/images/tomas.png">
-            <ul>
-              <li>Tomas Colussi</li>
-              <li>Admin</li>
-              <li>Aditional info</li>
-            </ul>
-          </div>
-        </div>
-        <div class="user-card">
-          <div class="inner-margin"> <img src="assets/images/tomas.png">
-            <ul>
-              <li>Tomas Colussi</li>
-              <li>Admin</li>
-              <li>Aditional info</li>
-            </ul>
-          </div>
-        </div>
-        <div class="user-card">
-          <div class="inner-margin"><img src="assets/images/tomas.png">
-            <ul>
-              <li>Tomas Colussi</li>
-              <li>Admin</li>
-              <li>Aditional info</li>
-            </ul>
-          </div>
-        </div>
-        <!--tomas code--> 
-        
-        <!--tomas code-->
-        <div class="user-card">
-          <div class="inner-margin"><img src="assets/images/tomas.png">
-            <ul>
-              <li>Tomas Colussi</li>
-              <li>Admin</li>
-              <li>Aditional info</li>
-            </ul>
-          </div>
-        </div>
-        <div class="user-card">
-          <div class="inner-margin"> <img src="assets/images/tomas.png">
-            <ul>
-              <li>Tomas Colussi</li>
-              <li>Admin</li>
-              <li>Aditional info</li>
-            </ul>
-          </div>
-        </div>
-        <div class="user-card">
-          <div class="inner-margin"> <img src="assets/images/tomas.png">
-            <ul>
-              <li>Tomas Colussi</li>
-              <li>Admin</li>
-              <li>Aditional info</li>
-            </ul>
-          </div>
-        </div>
-        <div class="user-card">
-          <div class="inner-margin"><img src="assets/images/tomas.png">
-            <ul>
-              <li>Tomas Colussi</li>
-              <li>Admin</li>
-              <li>Aditional info</li>
-            </ul>
-          </div>
-        </div>
+
       </div>
       <material-button class="material-button-fab material-theme-light-blue fab">
         <material-icon icon="material-icons/icons/system_icons/content/res/1x_web/ic_add_wht_24dp.png" style="width: 24px; height: 24px;"></material-icon>
@@ -160,7 +97,7 @@
 <script type="text/javascript" src="bower_components/jquery-timepicker-jt/jquery.timepicker.js"></script> 
 <script src="js/timepicker.min.js" type="text/javascript"></script> 
 <script type="text/javascript" src="bower_components/angular-ui-date/src/date.js"></script> 
-<script src="js/pollApp.js" type="text/javascript"></script> 
+<script src="js/app.js" type="text/javascript"></script> 
 <script src="js/pollJapi.js" type="text/javascript"></script> 
 <script src="js/targetSelectionCtrl.js" type="text/javascript"></script> 
 <script type="text/javascript" src="js/dropdown.js"></script>

@@ -46,12 +46,12 @@
 	margin-bottom: 40px	
 }
 
-.user-card {
+.roleCard {
 	width: 33.333%;
 	float: left;	
 }
 
-.user-card .inner-margin {
+.roleCard .inner-margin {
 	background: rgba(0, 0, 0, 0.7);
 	margin-right: 15px;
 	margin-bottom: 15px;
@@ -61,17 +61,17 @@
 	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 1);
 }
 
-.user-card img {
+.roleCard img {
 	width: 100%;
 	padding: 5px 5px 0 5px
 }
 
-.user-card ul {
+.roleCard ul {
 	padding: 5px 10px;
 	list-style-type: none
 }
 
-.user-card ul li {
+.roleCard ul li {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	padding: 0;
 	margin: 0;
@@ -82,13 +82,13 @@
 	line-height: 25px
 }
 
-.user-card ul li:last-child {
+.roleCard ul li:last-child {
 	border-bottom: none;
 	margin: 0;
 	padding: 0
 }
 
-.user-card .new-user ul li {
+.roleCard .new-user ul li {
 	color: #1e6b99;
 	text-align: center
 }
