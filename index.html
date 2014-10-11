@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="pollApp">
 <head>
-<title>Startup</title>
+<title>Choose a Role</title>
 <link rel="stylesheet" type="text/css" media="screen" href="bower_components/jquery-timepicker-jt/jquery.timepicker.css" />
 <link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.css"/>
 <link rel="stylesheet" type="text/css" href="css/angular-material.css">
@@ -43,64 +43,25 @@
       <div layout="horizontal">
         <div class="material-toolbar-tools">
           <div id="menu-drawer-button" class="menu-icon" ng-click="toggleMenu()"> <img src="material-icons/icons/system_icons/navigation/res/1x_web/ic_menu_24dp.png"> </div>
-          <h2 class="toolbarTitle">Startup</h2>
+          <h2 class="toolbarTitle">Choose a Role</h2>
         </div>
-        <!--
-        <div id="viewButtons" layout="horizontal" flex="25" layout-align="end">
-          <material-button id="streamButton" class="viewButton material-button-icon" ng-click="streamView()" ng-class="{active: listView === 'stream', inactive: listView === 'quilt'}" title="Show as Stream">
-            <material-icon icon="material-icons/icons/system_icons/action/res/1x_web/ic_view_stream_24dp.png"></material-icon>
-          </material-button>
-          <material-button id="quiltButton" class="viewButton material-button-icon" ng-click="quiltView()" ng-class="{active: listView === 'quilt', inactive: listView === 'stream'}" title="Show as Quilt">
-            <material-icon icon="material-icons/icons/system_icons/action/res/1x_web/ic_view_quilt_24dp.png"></material-icon>
-          </material-button>
-        </div>--> 
       </div>
     </material-toolbar>
     <div class="content-padding"> 
       
       <!--tomas code-->
-      <div class="left-nav">
-        <div class="sidebar-title">Activity</div>
-        <div class="notification-box"><img src="avatar.png"> Tomas just requested help
-          <div class="clearBoth"></div>
-          <span>5 hours ago</span> </div>
-        <div class="notification-box"><img src="avatar.png"> Jon purchased a spaceship
-          <div class="clearBoth"></div>
-          <span>6 hours ago</span> </div>
-        <div class="notification-box"><img src="avatar.png"> Jon purchased a spaceship
-          <div class="clearBoth"></div>
-          <span>6 hours ago</span> </div>
-        <div class="notification-box"><img src="avatar.png"> Jon purchased a spaceship
-          <div class="clearBoth"></div>
-          <span>6 hours ago</span> </div>
-      </div>
-      <div class="right-nav">
-        <div class="sidebar-title">Activity</div>
-        <div class="notification-box"><img src="avatar.png"> Tomas just requested help
-          <div class="clearBoth"></div>
-          <span>5 hours ago</span> </div>
-        <div class="notification-box"><img src="avatar.png"> Jon purchased a spaceship
-          <div class="clearBoth"></div>
-          <span>6 hours ago</span> </div>
-        <div class="notification-box"><img src="avatar.png"> Jon purchased a spaceship
-          <div class="clearBoth"></div>
-          <span>6 hours ago</span> </div>
-        <div class="notification-box"><img src="avatar.png"> Jon purchased a spaceship
-          <div class="clearBoth"></div>
-          <span>6 hours ago</span> </div>
-      </div>
       <div class="card-container">
         <div class="pantheon-logo"><img src="logo.png"></div>
-        <div class="user-card" ng-class="{quilt:listView == 'quilt', stream:listView == 'stream'}"> <span class="user-name">Tomas Colussi</span>
+        <div class="user-card">
           <div class="inner-margin new-user"><img src="black-avatar.png">
             <ul>
-              <li>Add Character</li>
-              <li>Admin</li>
-              <li>Aditional info</li>
+              <li></li>
+              <li>Add a Role</li>
+              <li></li>
             </ul>
           </div>
         </div>
-        <div class="user-card" ng-class="{quilt:listView == 'quilt', stream:listView == 'stream'}"> <span class="user-name">Tomas Colussi</span>
+        <div class="user-card">
           <div class="inner-margin"> <img src="tomas.png">
             <ul>
               <li>Tomas Colussi</li>
@@ -109,7 +70,7 @@
             </ul>
           </div>
         </div>
-        <div class="user-card" ng-class="{quilt:listView == 'quilt', stream:listView == 'stream'}"> <span class="user-name">Tomas Colussi</span>
+        <div class="user-card">
           <div class="inner-margin"> <img src="tomas.png">
             <ul>
               <li>Tomas Colussi</li>
@@ -118,7 +79,7 @@
             </ul>
           </div>
         </div>
-        <div class="user-card" ng-class="{quilt:listView == 'quilt', stream:listView == 'stream'}"> <span class="user-name">Tomas Colussi</span>
+        <div class="user-card">
           <div class="inner-margin"> <img src="tomas.png">
             <ul>
               <li>Tomas Colussi</li>
@@ -127,7 +88,7 @@
             </ul>
           </div>
         </div>
-        <div class="user-card" ng-class="{quilt:listView == 'quilt', stream:listView == 'stream'}"> <span class="user-name">Tomas Colussi</span>
+        <div class="user-card">
           <div class="inner-margin"><img src="tomas.png">
             <ul>
               <li>Tomas Colussi</li>
@@ -139,7 +100,7 @@
         <!--tomas code--> 
         
         <!--tomas code-->
-        <div class="user-card" ng-class="{quilt:listView == 'quilt', stream:listView == 'stream'}"> <span class="user-name">Tomas Colussi</span>
+        <div class="user-card">
           <div class="inner-margin"><img src="tomas.png">
             <ul>
               <li>Tomas Colussi</li>
@@ -148,7 +109,7 @@
             </ul>
           </div>
         </div>
-        <div class="user-card" ng-class="{quilt:listView == 'quilt', stream:listView == 'stream'}"> <span class="user-name">Tomas Colussi</span>
+        <div class="user-card">
           <div class="inner-margin"> <img src="tomas.png">
             <ul>
               <li>Tomas Colussi</li>
@@ -157,7 +118,7 @@
             </ul>
           </div>
         </div>
-        <div class="user-card" ng-class="{quilt:listView == 'quilt', stream:listView == 'stream'}"> <span class="user-name">Tomas Colussi</span>
+        <div class="user-card">
           <div class="inner-margin"> <img src="tomas.png">
             <ul>
               <li>Tomas Colussi</li>
@@ -166,7 +127,7 @@
             </ul>
           </div>
         </div>
-        <div class="user-card" ng-class="{quilt:listView == 'quilt', stream:listView == 'stream'}"> <span class="user-name">Tomas Colussi</span>
+        <div class="user-card">
           <div class="inner-margin"><img src="tomas.png">
             <ul>
               <li>Tomas Colussi</li>
