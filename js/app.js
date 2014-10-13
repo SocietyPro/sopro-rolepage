@@ -39,5 +39,9 @@ app.controller("appCtrl",function ($scope, $materialSidenav, menu){
   $scope.toggleMenu = function () {
     $materialSidenav('left').toggle();
   };
+  
+  $scope.overflowToggle = function (role) {
+  	role.of = !role.of;
+  };
 
 });
