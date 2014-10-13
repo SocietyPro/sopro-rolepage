@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="css/docs.css">
 <link rel="stylesheet" type="text/css" href="css/custom.css">
 <link rel="stylesheet" type="text/css" href="css/tomas.css">
-<link rel="stylesheet" type="text/css" href="css/dropdown.css">
 <link rel="stylesheet" type="text/css" href="css/pantheonPollMaster.css">
 </head>
 <body ng-controller="appCtrl">
@@ -16,20 +15,8 @@
     <material-content flex>
       <div> 
         
-        <!--tomas code-->
-        <div class="sidebar-title">Activity</div>
-        <div class="notification-box"><img src="assets/images/avatar.png"> Tomas just requested help
-          <div class="clearBoth"></div>
-          <span>5 hours ago</span> </div>
-        <div class="notification-box"><img src="assets/images/avatar.png"> Jon purchased a spaceship
-          <div class="clearBoth"></div>
-          <span>6 hours ago</span> </div>
-        <div class="notification-box"><img src="assets/images/avatar.png"> Jon purchased a spaceship
-          <div class="clearBoth"></div>
-          <span>6 hours ago</span> </div>
-        <div class="notification-box"><img src="assets/images/avatar.png"> Jon purchased a spaceship
-          <div class="clearBoth"></div>
-          <span>6 hours ago</span> </div>
+        <!--tomas code--> 
+        
         <!--tomas code--> 
         
       </div>
@@ -44,9 +31,7 @@
         </div>
       </div>
     </material-toolbar>
-    <div class="content-padding"> 
-      
-      <!--tomas code-->
+    <div class="content-padding">
       <div class="card-container">
         <div id="bigLogo" class="pantheon-logo"><img src="assets/images/logo.png"></div>
         <div class="roleCard">
@@ -54,28 +39,20 @@
             <div class="roleName" title="Add a Role">Add a Role</div>
           </div>
         </div>
-
         <div title="Role Card" class="roleCard" ng-repeat="role in roles track by role.name">
           <div class="inner-margin">
             <div title="Role Avatar"><img src="assets/images/tomas.png"></div>
             <div class="roleName" title="Role Name">{{role.name}}</div>
+            <div class="roleDescription">This is a little description to show how this thing would look like</div>
+            <div class="editBar" name="roleCardHoverMenu" layout="horizontal" layout-align="end start">
+              <material-button class="material-button-icon overflowMenuButton" ng-click="overflowToggle(poll)" title="Overflow Menu"> <img class="overflowMenuIcon" ng-src="material-icons/icons/system_icons/action/res/1x_web/ic_drawer_wht_18dp.png"> </material-button>
+            </div>
           </div>
         </div>
       </div>
-      
-      <!--dialog-->
-      <div ng-controller="AppCtrl" class="full" layout="vertical" layout-padding>
-        <material-button class="material-button-colored" ng-click="dialogBasic($event)"> Open Basic Dialog </material-button>
-        <material-button class="material-button-colored" ng-click="dialogAdvanced($event)"> Open Advanced Dialog </material-button>
-      </div>
-      <!--dialog-->
-      
       <material-button class="material-button-fab material-theme-light-blue fab">
         <material-icon icon="material-icons/icons/system_icons/content/res/1x_web/ic_add_wht_24dp.png" style="width: 24px; height: 24px;"></material-icon>
       </material-button>
-      <!--tomas code-->
-      
-      <ng-view></ng-view>
     </div>
   </div>
 </div>
@@ -85,41 +62,6 @@
 <script src="js/angular-material.js" type="text/javascript"></script> 
 <script src="bower_components/japi/mocks/mockJapi.js" type="text/javascript"></script> 
 <script src="bower_components/japi/js/japi.js" type="text/javascript"></script> 
-<script src="js/app.js" type="text/javascript"></script> 
-<script>
-angular.module('dialogDemo1', ['ngMaterial'])
-
-.controller('AppCtrl', function($scope, $materialDialog) {
-  $scope.dialogBasic = function(ev) {
-    $materialDialog.show({
-      templateUrl: 'dialog1.tmpl.html',
-      targetEvent: ev,
-      controller: DialogController
-    });
-  };
-
-  $scope.dialogAdvanced = function(ev) {
-    $materialDialog.show({
-      templateUrl: 'dialog2.tmpl.html',
-      targetEvent: ev,
-      controller: DialogController
-    }).then(function(answer) {
-      alert('You said the information was "' + answer + '".');
-    }, function() {
-      alert('You cancelled the dialog.');
-    });
-  };
-});
-
-function DialogController($scope, $materialDialog) {
-  $scope.hide = function() {
-    $materialDialog.hide();
-  };
-
-  $scope.answer = function(answer) {
-    $materialDialog.hide(answer);
-  };
-}
-</script>
+<script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>

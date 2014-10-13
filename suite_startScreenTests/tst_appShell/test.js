@@ -1,4 +1,4 @@
-// file:///home/voodoo/cprojects/sopro-rolepage/index.html
+// file:///C:/Users/Tomas/Desktop/sopro-rolepage/index.html
 
 // open the application in the current browser tab
 function getHtmlApp (htmlAppRoot) {
@@ -19,7 +19,7 @@ function init () {
     startApplication("SocietyPro");
     waitForObjectItem(":Navigation_QTreeWidget", "Web Browser");
     clickItem(":Navigation_QTreeWidget", "Web Browser", 71, 9, 0, Qt.LeftButton);
-    var htmlAppRoot = "file:///home/voodoo/cprojects/sopro-rolepage/index.html";
+    var htmlAppRoot = "file:///C:/Users/Tomas/Desktop/sopro-rolepage/index.html";
     getHtmlApp(htmlAppRoot);
 }
 
