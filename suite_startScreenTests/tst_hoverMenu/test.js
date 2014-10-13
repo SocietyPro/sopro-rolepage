@@ -31,5 +31,4 @@ function hoverMenuTests() {
     test.compare(object.exists(':qt_splithandle_.overflowMenu_HTML_Object'), false);  
     
     // overflow menu has a 'delete' action
-    
 }
