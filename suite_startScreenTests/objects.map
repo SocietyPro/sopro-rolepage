@@ -1,11 +1,14 @@
 :Container.qt_tabwidget_stackedwidget_QStackedWidget	{container=':SocietyPro v*.Container_QSplitter' name='qt_tabwidget_stackedwidget' type='QStackedWidget' visible='1'}
 :Container_CloseButton	{container=':SocietyPro v*.Container_QSplitter' type='CloseButton' unnamed='1' visible='1'}
 :Container_QTabBar	{container=':SocietyPro v*.Container_QSplitter' type='QTabBar' unnamed='1' visible='1'}
-:Navigation.Role: voodoo_QToolButton	{container=':SocietyPro v*.Navigation_WNavigationTree' text='Role: voodoo' type='QToolButton' unnamed='1' visible='1'}
+:Navigation.Role: *_QToolButton	{container=':SocietyPro v*.Navigation_WNavigationTree' text?='Role: *' type='QToolButton' unnamed='1' visible='1'}
 :Navigation_QTreeWidget	{container=':SocietyPro v*.Navigation_WNavigationTree' type='QTreeWidget' unnamed='1' visible='1'}
 :SocietyPro v*.Container_QSplitter	{name='Container' type='QSplitter' visible='1' window=':SocietyPro v*_WMainWindow'}
+:SocietyPro v*.Message Log_QDockWidget	{name='Message Log' type='QDockWidget' visible='1' window=':SocietyPro v*_WMainWindow' windowTitle='Message Log'}
+:SocietyPro v*.Message Log_QMenu	{aboveWidget=':SocietyPro v*.Message Log_QDockWidget' type='QMenu' unnamed='1' visible='1' window=':SocietyPro v*_WMainWindow'}
 :SocietyPro v*.Navigation_WNavigationTree	{name='Navigation' type='WNavigationTree' visible='1' window=':SocietyPro v*_WMainWindow' windowTitle='Navigation'}
 :SocietyPro v*.qt_edit_menu_QMenu	{name='qt_edit_menu' type='QMenu' visible='1' window=':SocietyPro v*_WMainWindow'}
+:SocietyPro v*_QMenu	{type='QMenu' unnamed='1' visible='1' window=':SocietyPro v*_WMainWindow'}
 :SocietyPro v*_WMainWindow	{type='WMainWindow' unnamed='1' visible='1' windowTitle?='SocietyPro v*'}
 :TabItem	{container=':Container_QTabBar' text?='*' type='TabItem'}
 :Web Browser_QModelIndex	{column='0' container=':Navigation_QTreeWidget' text='Web Browser' type='QModelIndex'}
