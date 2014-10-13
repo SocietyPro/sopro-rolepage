@@ -39,7 +39,7 @@
             <div class="roleName" title="Add a Role">Add a Role</div>
           </div>
         </div>
-        <div title="Role Card" class="roleCard" ng-mouseover="poll.menubar = true" ng-mouseleave="poll.menubar = false">
+        <div title="Role Card" class="roleCard" ng-repeat="role in roles" ng-mouseover="poll.menubar = true" ng-mouseleave="poll.menubar = false">
           <div class="inner-margin">
             <div title="Role Avatar"><img src="assets/images/avatar.png"></div>
             <div class="roleName" title="Role Name">{{role.name}}</div>
