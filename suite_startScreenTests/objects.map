@@ -1,3 +1,4 @@
+::qt_splithandle_.roleCardHoverMenu_HTML_Object	{container=':qt_splithandle__QWebView' name='roleCardHoverMenu' tagName='DIV'}
 :Container.qt_tabwidget_stackedwidget_QStackedWidget	{container=':SocietyPro v*.Container_QSplitter' name='qt_tabwidget_stackedwidget' type='QStackedWidget' visible='1'}
 :Container_CloseButton	{container=':SocietyPro v*.Container_QSplitter' type='CloseButton' unnamed='1' visible='1'}
 :Container_QTabBar	{container=':SocietyPro v*.Container_QSplitter' type='QTabBar' unnamed='1' visible='1'}
@@ -17,6 +18,7 @@
 :qt_splithandle_.Role Avatar_HTML_Object	{container=':qt_splithandle__QWebView' tagName='DIV' title='Role Avatar' type='HTML_Object'}
 :qt_splithandle_.Role Card_HTML_Object	{container=':qt_splithandle__QWebView' tagName='DIV' title='Role Card' type='HTML_Object'}
 :qt_splithandle_.Role Name_HTML_Object	{container=':qt_splithandle__QWebView' tagName='DIV' title='Role Name' type='HTML_Object'}
+:qt_splithandle_.This is a little description to show how this thing would look like_HTML_Object	{container=':qt_splithandle__QWebView' innerText='This is a little description to show how this thing would look like' tagName='DIV' type='HTML_Object'}
 :qt_splithandle_.a_HTML_Object	{container=':qt_splithandle__QWebView' innerText='a' tagName='DIV' type='HTML_Object'}
 :qt_splithandle_.appTitle_HTML_Object	{container=':qt_splithandle__QWebView' id='appTitle' tagName='H2' type='HTML_Object'}
 :qt_splithandle_.appToolbar_HTML_Object	{container=':qt_splithandle__QWebView' id='appToolbar' tagName='MATERIAL-TOOLBAR' type='HTML_Object'}
@@ -24,6 +26,7 @@
 :qt_splithandle_.cardRoleName_HTML_Object	{className='cardRoleName' container=':qt_splithandle__QWebView' tagName='DIV' type='HTML_Object'}
 :qt_splithandle_.menu-drawer-button_HTML_Object	{container=':qt_splithandle__QWebView' id='menu-drawer-button' tagName='DIV' type='HTML_Object'}
 :qt_splithandle_.r_HTML_Object	{container=':qt_splithandle__QWebView' innerText='r' tagName='DIV' type='HTML_Object'}
+:qt_splithandle_.roleCardHoverMenu_HTML_Object	{container=':qt_splithandle__QWebView' tagName='DIV' title='roleCardHoverMenu' type='HTML_Object'}
 :qt_splithandle_.roleCard_HTML_Object	{container=':qt_splithandle__QWebView' domClassName='roleCard' tagName='DIV' type='HTML_Object'}
 :qt_splithandle__QSplitterHandle	{container=':qt_tabwidget_stackedwidget_WWebViewTabbed' name='qt_splithandle_' type='QSplitterHandle' visible='1'}
 :qt_splithandle__QWebView	{aboveWidget=':qt_splithandle__QSplitterHandle' container=':qt_tabwidget_stackedwidget_WWebViewTabbed' type='QWebView' unnamed='1' visible='1'}
