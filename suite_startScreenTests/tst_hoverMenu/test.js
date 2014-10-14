@@ -36,7 +36,7 @@ function hoverMenuTests() {
     test.compare(findObject(":qt_splithandle_.Delete Role_HTML_Object").visible, true);
     
     // overflow menu has a 'role settings' action
-    test.compare(object.exists(":qt_splithandle_.Role Settings_HTML_Object"), true);
-    test.compare(findObject(":qt_splithandle_.Role Settings_HTML_Object").visible, true);
+    // test.compare(object.exists(":qt_splithandle_.Role Settings_HTML_Object"), true);
+    // test.compare(findObject(":qt_splithandle_.Role Settings_HTML_Object").visible, true);
     
 }

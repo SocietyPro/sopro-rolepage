@@ -4,25 +4,9 @@ var path = require('path');
 // the normal file matcher can't exclude these by !exclusion
 // We will compare every file and folder scheduled for cleaning against this list:
 var EXCLUDED_ICONS = [
-  "material-icons/icons/system_icons/action/res/1x_web/ic_delete_wht_18dp.png",
-  "material-icons/icons/system_icons/action/res/1x_web/ic_done_all_wht_18dp.png",
+  "material-icons/icons/system_icons/navigation/res/1x_web/ic_menu_wht_24dp.png",
   "material-icons/icons/system_icons/action/res/1x_web/ic_drawer_wht_18dp.png",
-  "material-icons/icons/system_icons/action/res/1x_web/ic_view_quilt_24dp.png",
-  "material-icons/icons/system_icons/action/res/1x_web/ic_view_stream_24dp.png",
-  "material-icons/icons/system_icons/av/res/1x_web/ic_play_arrow_wht_18dp.png",
-  "material-icons/icons/system_icons/av/res/1x_web/ic_stop_wht_18dp.png",
-  "material-icons/icons/system_icons/communication/res/1x_web/ic_chat_wht_18dp.png",
-  "material-icons/icons/system_icons/communication/res/1x_web/ic_forum_18dp.png",
-  "material-icons/icons/system_icons/content/res/1x_web/ic_add_18dp.png",
-  "material-icons/icons/system_icons/content/res/1x_web/ic_add_24dp.png",
-  "material-icons/icons/system_icons/content/res/1x_web/ic_clear_18dp.png",
-  "material-icons/icons/system_icons/content/res/1x_web/ic_content_copy_wht_18dp.png",
-  "material-icons/icons/system_icons/content/res/1x_web/ic_filter_24dp.png ",
-  "material-icons/icons/system_icons/navigation/res/1x_web/ic_arrow_back_18dp.png",
-  "material-icons/icons/system_icons/navigation/res/1x_web/ic_menu_24dp.png",
-  "material-icons/icons/system_icons/navigation/res/1x_web/ic_menu_18dp.png",
-  "material-icons/icons/system_icons/social/res/1x_web/ic_group_18dp.png",
-  "material-icons/icons/system_icons/toggle/res/1x_web/ic_check_box_18dp.png"
+  "material-icons/icons/system_icons/content/res/1x_web/ic_add_wht_24dp.png"
 ];
 
 // Check one path to see if it's OK to delete:
