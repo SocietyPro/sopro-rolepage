@@ -16,19 +16,27 @@ function main () {
 function hoverMenuTests() {
     
     // hover menu is not visible until the mouse hovers over the card
-    test.compare(object.exists(':qt_splithandle_.roleCardHoverMenu_HTML_Object'), true);
-    test.compare(findObject(':qt_splithandle_.roleCardHoverMenu_HTML_Object').visible, false);
-    mouseMove(":qt_splithandle_.Role Card_HTML_Object");
-    test.compare(findObject(':qt_splithandle_.roleCardHoverMenu_HTML_Object').visible, true);    
+    test.compare(findObject(':qt_splithandle_.hoverBar-0_HTML_Object').visible, false);
+    mouseMove(":qt_splithandle_.roleCard-0_HTML_Object");
+    test.compare(findObject(':qt_splithandle_.hoverBar-0_HTML_Object').visible, true);    
     
     // hover menu has an overflow menu button
     test.compare(object.exists(':qt_splithandle_.Overflow Menu_HTML_Object'), true);
     test.compare(findObject(':qt_splithandle_.Overflow Menu_HTML_Object').visible, true);
     
     // clicking the overflow menu button opens the overflow menu
-    test.compare(object.exists(':qt_splithandle_.overflowMenu_HTML_Object'), false);
+    waitFor("object.exists(':qt_splithandle_.overflowMenu-0_HTML_Object')", 20000);
+    test.compare(findObject(":qt_splithandle_.overflowMenu-0_HTML_Object").visible, false);     
     clickButton(waitForObject(":qt_splithandle_.Overflow Menu_HTML_Object"));
-    test.compare(object.exists(':qt_splithandle_.overflowMenu_HTML_Object'), false);  
+    snooze(1);
+    test.compare(findObject(":qt_splithandle_.overflowMenu-0_HTML_Object").visible, true);    
     
     // overflow menu has a 'delete' action
+    test.compare(object.exists(":qt_splithandle_.Delete Role_HTML_Object"), true);
+    test.compare(findObject(":qt_splithandle_.Delete Role_HTML_Object").visible, true);
+    
+    // overflow menu has a 'role settings' action
+    test.compare(object.exists(":qt_splithandle_.Role Settings_HTML_Object"), true);
+    test.compare(findObject(":qt_splithandle_.Role Settings_HTML_Object").visible, true);
+    
 }

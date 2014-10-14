@@ -30,6 +30,20 @@ app.factory("menu", ['$rootScope', function ($rootScope) {
   };
 }]);
 
+app.directive('ngReallyClick', [function() {
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            element.bind('click', function() {
+                var message = attrs.ngReallyMessage;
+                if (message && confirm(message)) {
+                    scope.$apply(attrs.ngReallyClick);
+                }
+            });
+        }
+    }
+}]);
+
 app.controller("appCtrl",function ($scope, $materialSidenav, menu){
 
   $scope.menu = menu;
@@ -42,6 +56,10 @@ app.controller("appCtrl",function ($scope, $materialSidenav, menu){
   
   $scope.overflowToggle = function (role) {
   	role.of = !role.of;
+  };
+
+  $scope.destroyRole = function (role) {
+    console.log("hypothetical role hypothetically destroyed");
   };
 
 });

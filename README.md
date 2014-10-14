@@ -1,31 +1,30 @@
-html5-pollmaster
+sopro-rolepage
 =================
 
 An HTML5/angular.js app built to run as a Cambrian App inside the Cambrian GUI.
 
-The Pollmaster app is an administration interface for Polls.
+The rolepage app is a startup page so users can select the role they want to use.
 
-It offers UI's to create new polls, delete polls, manage poll templates, send
-polls, and view poll results.
+It offers UI's to create new roles, delete roles, manage roles, and select roles.
 
 
 Usage
 ----
 
-    $ git clone https://github.com/SocietyPro/html5-pollmaster.git
-    $ cd html5-pollmaster
-    $ node --version        # should be >= 10.25
+    $ git clone https://github.com/SocietyPro/sopro-rolepage.git
+    $ cd sopro-rolepage
+    $ bower install
     $ git submodule update --init
-    $ npm install
-      # if using in Society Pro, point the SoPro web browser to this directory's index.html
-    $ npm start             # starts serving static http content in this terminal
-    $ npm test              # run tests
-    $ npm run karma         # start karma monitor and auto run unit tests
 
+    in Society Pro browser, navigate to the application's index.html file
 
 Tests
 -----
 
+Squish GUI tests:
+
+import the suite_startScreenTests suite
+modify config.js 
 Protractor e2e tests:
 
     $ cd html5-pollmaster
