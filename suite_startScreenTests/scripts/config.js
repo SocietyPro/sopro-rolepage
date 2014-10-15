@@ -17,3 +17,4 @@ var getHtmlApp = function () {
     type(waitForObject(":_QLineEdit"), applicationPath);
     type(waitForObject(":_QLineEdit"), "<Return>");    
 }
+

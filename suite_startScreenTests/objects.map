@@ -16,6 +16,7 @@
 :TabItem	{container=':Container_QTabBar' text?='*' type='TabItem'}
 :Web Browser_QModelIndex	{column='0' container=':Navigation_QTreeWidget' text='Web Browser' type='QModelIndex'}
 :_QLineEdit	{container=':qt_tabwidget_stackedwidget_WWebViewTabbed' type='QLineEdit' unnamed='1' visible='1'}
+:qt_splithandle_.Add Role_HTML_Object	{container=':qt_splithandle__QWebView' id='addRoleCard' tagName='DIV' title='Add Role' type='HTML_Object'}
 :qt_splithandle_.CLOSE SAVE_HTML_Object	{container=':qt_splithandle__QWebView' innerText='CLOSE SAVE' occurrence='3' tagName='DIV' type='HTML_Object'}
 :qt_splithandle_.Delete Role_HTML_Object	{container=':qt_splithandle__QWebView' innerText='Delete Role' tagName='A' type='HTML_Object'}
 :qt_splithandle_.Overflow Menu_HTML_Object	{container=':qt_splithandle__QWebView' tagName='MATERIAL-BUTTON' title='Overflow Menu' type='HTML_Object'}
@@ -33,8 +34,6 @@
 :qt_splithandle_.r_HTML_Object	{container=':qt_splithandle__QWebView' innerText='r' tagName='DIV' type='HTML_Object'}
 :qt_splithandle_.roleAvatar-0_HTML_Object	{container=':qt_splithandle__QWebView' id='roleAvatar-0' tagName='DIV' type='HTML_Object'}
 :qt_splithandle_.roleCard-0_HTML_Object	{container=':qt_splithandle__QWebView' id='roleCard-0' tagName='DIV' type='HTML_Object'}
-:qt_splithandle_.roleCardHoverMenu_HTML_Object	{container=':qt_splithandle__QWebView' tagName='DIV' title='roleCardHoverMenu' type='HTML_Object'}
-:qt_splithandle_.roleCard_HTML_Object	{className='roleCard' container=':qt_splithandle__QWebView' tagName='DIV' type='HTML_Object'}
 :qt_splithandle_.roleDescription-0_HTML_Object	{container=':qt_splithandle__QWebView' id='roleDescription-0' tagName='DIV' type='HTML_Object'}
 :qt_splithandle_.roleName-0_HTML_Object	{container=':qt_splithandle__QWebView' id='roleName-0' tagName='DIV' type='HTML_Object'}
 :qt_splithandle_.roleNameInput_text	{container=':qt_splithandle__QWebView' id='roleNameInput' tagName='INPUT' type='text'}

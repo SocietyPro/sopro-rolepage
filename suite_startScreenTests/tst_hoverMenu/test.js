@@ -16,6 +16,7 @@ function main () {
 function hoverMenuTests() {
     
     // hover menu is not visible until the mouse hovers over the card
+    test.compare(object.exists(':qt_splithandle_.hoverBar-0_HTML_Object'), false);
     test.compare(findObject(':qt_splithandle_.hoverBar-0_HTML_Object').visible, false);
     mouseMove(":qt_splithandle_.roleCard-0_HTML_Object");
     test.compare(findObject(':qt_splithandle_.hoverBar-0_HTML_Object').visible, true);    
